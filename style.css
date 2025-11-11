@@ -123,3 +123,24 @@
 .project-image:hover {
     transform: scale(1.03); /* A subtle zoom-in effect on hover */
 }
+
+/* ============================================= */
+/* TEAM SECTION STYLING */
+/* ============================================= */
+.team-card {
+    border: none; /* Removes the default card border */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* A soft shadow */
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px); /* Lifts the card up slightly on hover */
+}
+
+.team-card img {
+    background-color: #f8f9fa; /* A light grey background for the image */
+}
+/* 4. New Team Button Color */
+.btn-team {
+    background-color: #198754; /* This is Bootstrap's 'success' green */
+}
