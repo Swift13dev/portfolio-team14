@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Team 14 Portfolio</title>
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <i class="fa-solid fa-code me-2" style="color: var(--primary-color);"></i>
+                    Team 14
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        
+        <div class="row mb-5 text-center">
+            <div class="col-12">
+                <h1 class="display-4 fw-bold mb-3">Our Projects</h1>
+                <p class="text-muted mb-4">A showcase of our technical journey.</p>
+                
+                <div class="btn-group" role="group" aria-label="Project Filters">
+                    <button type="button" class="btn btn-outline-custom active" data-filter="all">All</button>
+                    <button type="button" class="btn btn-outline-custom" data-filter="fullstack">Full Stack</button>
+                    <button type="button" class="btn btn-outline-custom" data-filter="frontend">Frontend</button>
+                    <button type="button" class="btn btn-outline-custom" data-filter="game">Games</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            
+            <div class="col-md-6 col-lg-4 project-item" data-category="fullstack">
+                <div class="card project-card h-100">
+                    <img src="pharmafinder.png" class="project-img-top" alt="PharmaFinder">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">PharmaFinder</h5>
+                        <p class="card-text text-muted small mb-4">
+                            A healthcare platform connecting users with verified pharmacies for medicine disposal.
+                        </p>
+                        <div class="mt-auto">
+                            <a href="https://pharmafinderapp-15977.web.app" target="_blank" class="btn btn-sm btn-primary-custom w-100">View Live App</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 project-item" data-category="fullstack">
+                <div class="card project-card h-100">
+                    <img src="grade.png" class="project-img-top" alt="Grade System">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Grade Management</h5>
+                        <p class="card-text text-muted small mb-4">
+                            A comprehensive system to manage student records, calculate grades, and export data to CSV.
+                        </p>
+                        <div class="mt-auto">
+                            <a href="https://swift13dev.github.io/student-grade-management-system/" target="_blank" class="btn btn-sm btn-primary-custom w-100 mb-2">View Live App</a>
+                            <a href="https://github.com/swift13dev/student-grade-management-system" target="_blank" class="btn btn-sm btn-outline-secondary w-100">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 project-item" data-category="game">
+                <div class="card project-card h-100">
+                    <img src="game.png" class="project-img-top" alt="Breakout Game">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Breakout Arcade</h5>
+                        <p class="card-text text-muted small mb-4">
+                            A retro brick-breaking game built with HTML5 Canvas and JavaScript physics.
+                        </p>
+                        <div class="mt-auto">
+                            <a href="https://swift13dev.github.io/flappy-game/" target="_blank" class="btn btn-sm btn-primary-custom w-100 mb-2">Play Game</a>
+                            <a href="https://github.com/swift13dev/flappy-game" target="_blank" class="btn btn-sm btn-outline-secondary w-100">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 project-item" data-category="frontend">
+                <div class="card project-card h-100">
+                    <img src="todo.png" class="project-img-top" alt="To-Do List">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">To-Do List App</h5>
+                        <p class="card-text text-muted small mb-4">
+                            A dynamic task manager built with HTML, CSS, and jQuery featuring task filtering and local storage.
+                        </p>
+                        <div class="mt-auto">
+                            <a href="https://swift13dev.github.io/todo-list-app/" target="_blank" class="btn btn-sm btn-primary-custom w-100 mb-2">View Live App</a>
+                            <a href="https://github.com/swift13dev/todo-list-app" target="_blank" class="btn btn-sm btn-outline-secondary w-100">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-white mb-3">Team 14</h5>
+                    <p class="text-secondary small">Mahindra University.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none small">Home</a></li>
+                        <li><a href="projects.html" class="text-decoration-none small">Projects</a></li>
+                        <li><a href="about.html" class="text-decoration-none small">About Us</a></li>
+                        <li><a href="contact.html" class="text-decoration-none small">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Connect</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white fs-5"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="text-center text-secondary small">&copy; 2025 Team 14.</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        const filterButtons = document.querySelectorAll('[data-filter]');
+        const projectItems = document.querySelectorAll('.project-item');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // 1. Reset all buttons
+                filterButtons.forEach(b => b.classList.remove('active'));
+                filterButtons.forEach(b => b.style.backgroundColor = 'transparent');
+                filterButtons.forEach(b => b.style.color = 'var(--secondary-color)'); // Reset to Dark Blue
+                
+                // 2. Highlight clicked button
+                btn.classList.add('active');
+                btn.style.backgroundColor = 'var(--secondary-color)'; // Set to Dark Blue
+                btn.style.color = 'white';
+
+                // 3. Filter the projects
+                const filterValue = btn.getAttribute('data-filter');
+
+                projectItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Team 14 Portfolio</title>
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <i class="fa-solid fa-code me-2" style="color: var(--primary-color);"></i> Team 14
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        
+        <div class="row mb-5 text-center">
+            <div class="col-12">
+                <h1 class="display-4 fw-bold mb-3">Get In Touch</h1>
+                <p class="text-muted">Have a project in mind or want to collaborate? Send us a message.</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            
+            <div class="col-md-5 mb-5 mb-md-0">
+                <div class="p-4 bg-light rounded h-100">
+                    <h4 class="fw-bold mb-4">Contact Information</h4>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="me-3 text-primary fs-4"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Location</h6>
+                            <p class="text-muted small mb-0">Mahindra University, Hyderabad, India</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="me-3 text-primary fs-4"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Email</h6>
+                            <p class="text-muted small mb-0">studentsMU@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="me-3 text-primary fs-4"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h6 class="fw-bold mb-1">Phone</h6>
+                            <p class="text-muted small mb-0">+91 12345 67890</p>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h6 class="fw-bold mb-3">Follow Us</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-secondary fs-4"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="text-secondary fs-4"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="text-secondary fs-4"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <form id="contactForm" action="https://formspree.io/f/mnnwqqpn" method="POST" novalidate>
+                    
+                    <div class="mb-3">
+                        <label for="name" class="form-label fw-bold">Full Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" aria-label="Full Name">
+                        <div id="nameError" class="invalid-feedback">
+                            Please enter your name.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-bold">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" aria-label="Email Address">
+                        <div id="emailError" class="invalid-feedback">
+                            Please enter a valid email address.
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="subject" class="form-label fw-bold">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Project Inquiry" aria-label="Subject">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label fw-bold">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="How can we help you?" aria-label="Message"></textarea>
+                        <div id="messageError" class="invalid-feedback">
+                            Please enter a message.
+                        </div>
+                    </div>
+
+                    <div class="text-end">
+                        <button type="submit" class="btn btn-primary-custom px-5">Send Message</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold text-white mb-3">Team 14</h5>
+                    <p class="text-secondary small">Mahindra University.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h6 class="fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-decoration-none small">Home</a></li>
+                        <li><a href="projects.html" class="text-decoration-none small">Projects</a></li>
+                        <li><a href="about.html" class="text-decoration-none small">About Us</a></li>
+                        <li><a href="contact.html" class="text-decoration-none small">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Connect</h6>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white fs-5"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="text-center text-secondary small">&copy; 2025 Team 14.</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

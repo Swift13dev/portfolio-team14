@@ -1,0 +1,328 @@
+/* ============================================= */
+/* 1. GLOBAL STYLES & VARIABLES */
+/* ============================================= */
+:root {
+    --primary-color: #1abc9c; /* Tech-Zen Teal */
+    --secondary-color: #2c3e50; /* Dark Blue-Grey */
+    --light-bg: #f8f9fa;
+    --dark-text: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+/* ============================================= */
+/* LINKS & BUTTONS (UPDATED: Lighter Blue Theme) */
+/* ============================================= */
+
+/* 1. General Links */
+a {
+    text-decoration: none;
+    color: #3498db; /* Lighter Blue */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9; /* Slightly darker on hover */
+}
+
+/* 2. The Solid Button (View Live App / Submit / Download) */
+.btn-primary-custom {
+    background-color: #3498db; /* Lighter Blue */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-primary-custom:hover {
+    background-color: #2980b9; /* Darker Blue on hover */
+    transform: translateY(-2px);
+    color: white;
+}
+
+/* 3. The Outline Button (View Code / Contact / Filters) */
+.btn-outline-custom {
+    border: 2px solid #3498db; /* Lighter Blue Border */
+    color: #3498db;            /* Lighter Blue Text */
+    padding: 8px 23px;
+    border-radius: 50px;
+    background: transparent;
+    transition: all 0.2s;
+}
+
+.btn-outline-custom:hover, .btn-outline-custom.active {
+    background-color: #3498db; /* Fill with Lighter Blue */
+    color: white;
+    border-color: #3498db;
+}
+
+/* ============================================= */
+/* 2. NAVBAR STYLES */
+/* ============================================= */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    background-color: white;
+}
+
+.navbar-brand {
+    color: var(--secondary-color) !important;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: var(--secondary-color) !important;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.nav-link:hover { color: var(--primary-color) !important; }
+
+.nav-link.active {
+    color: var(--primary-color) !important;
+    font-weight: 700;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* ============================================= */
+/* 3. HOME PAGE (Hero & Retro Buttons) */
+/* ============================================= */
+.profile-image {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--primary-color);
+    padding: 5px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Retro Circular Buttons */
+.circle-btn {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin: 10px;
+}
+
+.circle-btn:hover {
+    transform: scale(1.1);
+    color: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.btn-resume { background-color: #ffc107; color: #333; }
+.btn-projects { background-color: #dc3545; }
+.btn-contact { background-color: #0dcaf0; }
+.btn-about { background-color: #198754; }
+
+/* ============================================= */
+/* 4. PROJECT CARDS */
+/* ============================================= */
+.project-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.project-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* ============================================= */
+/* 5. ABOUT PAGE (Team & Timeline) */
+/* ============================================= */
+.team-card {
+    border: none;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover { transform: scale(1.03); }
+
+/* Timeline */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: var(--primary-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+.timeline-container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline-container.left { left: 0; }
+.timeline-container.right { left: 50%; }
+
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -12px;
+    background-color: white;
+    border: 4px solid var(--secondary-color);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-container.right::after { left: -8px; }
+
+.timeline-content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+@media screen and (max-width: 600px) {
+    .timeline::after { left: 31px; }
+    .timeline-container { width: 100%; padding-left: 70px; padding-right: 25px; }
+    .timeline-container.right { left: 0%; }
+    .timeline-container.left::after, .timeline-container.right::after { left: 21px; }
+}
+
+/* ============================================= */
+/* 6. SKILLS PAGE (Pro Cards & Bars) */
+/* ============================================= */
+.tech-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.tech-card i {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    color: #6c757d;
+}
+
+.tech-card h5 { font-weight: 700; color: #333; margin: 0; }
+
+/* Hover Glow Effects */
+.tech-card.html:hover { border-bottom: 4px solid #e34c26; transform: translateY(-5px); box-shadow: 0 10px 30px rgba(227, 76, 38, 0.2); }
+.tech-card.html:hover i { color: #e34c26; transform: scale(1.1); }
+
+.tech-card.css:hover { border-bottom: 4px solid #264de4; transform: translateY(-5px); box-shadow: 0 10px 30px rgba(38, 77, 228, 0.2); }
+.tech-card.css:hover i { color: #264de4; transform: scale(1.1); }
+
+.tech-card.js:hover { border-bottom: 4px solid #f7df1e; transform: translateY(-5px); box-shadow: 0 10px 30px rgba(247, 223, 30, 0.3); }
+.tech-card.js:hover i { color: #f7df1e; transform: scale(1.1); }
+
+.tech-card.bootstrap:hover { border-bottom: 4px solid #7952b3; transform: translateY(-5px); box-shadow: 0 10px 30px rgba(121, 82, 179, 0.2); }
+.tech-card.bootstrap:hover i { color: #7952b3; transform: scale(1.1); }
+
+.tech-card.java:hover { border-bottom: 4px solid #5382a1; transform: translateY(-5px); box-shadow: 0 10px 30px rgba(83, 130, 161, 0.2); }
+.tech-card.java:hover i { color: #5382a1; transform: scale(1.1); }
+
+.tech-card.node:hover { border-bottom: 4px solid #68a063; transform: translateY(-5px); box-shadow: 0 10px 30px rgba(104, 160, 99, 0.2); }
+.tech-card.node:hover i { color: #68a063; transform: scale(1.1); }
+
+.tech-card.sql:hover { border-bottom: 4px solid #003b57; transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0, 59, 87, 0.2); }
+.tech-card.sql:hover i { color: #003b57; transform: scale(1.1); }
+
+.tech-card.git:hover { border-bottom: 4px solid #f05032; transform: translateY(-5px); box-shadow: 0 10px 30px rgba(240, 80, 50, 0.2); }
+.tech-card.git:hover i { color: #f05032; transform: scale(1.1); }
+
+/* Sleek Progress Bars */
+.skill-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+    margin-bottom: 20px;
+}
+
+.progress-custom {
+    height: 8px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar-custom {
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(90deg, var(--primary-color) 0%, #1674a3 100%);
+    position: relative;
+    width: 0;
+    transition: width 1.5s ease-in-out;
+}
+
+/* ============================================= */
+/* 7. CONTACT & FOOTER */
+/* ============================================= */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+footer h6 { color: var(--primary-color); }
+footer a { color: #bdc3c7; }
+footer a:hover { color: white; }
+
+/* Form Validation */
+.form-control.is-invalid {
+    border-color: #dc3545;
+    background-image: none;
+}
+
+.invalid-feedback {
+    display: none;
+    color: #dc3545;
+    font-size: 0.875em;
+}
+
+.form-control.is-invalid ~ .invalid-feedback { display: block; }
